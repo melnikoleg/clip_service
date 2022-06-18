@@ -2,4 +2,4 @@ fastapi==0.78.0
 gunicorn==20.1.0
 uvicorn==0.17.6
 
-git+https://github.com/cene555/ru-clip-tiny.git
+git+https://github.com/Lednik7/CLIP-ONNX.git
