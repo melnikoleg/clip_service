@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./deploy/Dockerfile
+    image: clip_service:${CLIP_SERVICE_VERSION:-latest}
+    restart: always
+    ports:
+      - "8002:8002"
+    env_file:
+    - .env
+    environment:
+      CLIP_SERVICE_HOST: 0.0.0.0

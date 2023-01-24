@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  api:
+    ports:
+      # Exposes application port.
+    - "8002:8002"
+    volumes:
+      # Adds current directory as volume.
+    - .:/app/src/
+    environment:
+      # Enables autoreload.
+      CLIP_SERVICE_RELOAD: "True"
