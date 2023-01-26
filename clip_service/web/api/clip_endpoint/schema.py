@@ -6,7 +6,7 @@ from pydantic import BaseModel
 class InputMessage(BaseModel):
     """Simple message model."""
 
-    meme_bytes: Any
+    meme_file: Any
     object_name: Any
 
 
@@ -15,4 +15,4 @@ class OutMessage(BaseModel):
 
     image_vector: Any
 
-    meme_url: Any
+    object_name: str
